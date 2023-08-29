@@ -1,10 +1,13 @@
 package com.example.springbootblog.domain;
 
+import lombok.Builder;
+
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Builder
 public class Article {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
